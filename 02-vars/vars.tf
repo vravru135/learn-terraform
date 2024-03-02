@@ -11,5 +11,5 @@ variable "fruits" {
  }
 
 output "fruits_first_fruit" {
-  value = var.fruits
+  value = var.fruits[0]
  }
