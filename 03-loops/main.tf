@@ -6,7 +6,7 @@
 # for_each is used if your input is map
 
 variable "instances" {
-  default = ["frontend" , "backend" , "mysql" ]
+  default = ["frontend" , "backend" , "mysql"]
 }
 
  output "instances" {
