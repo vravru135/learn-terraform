@@ -9,7 +9,6 @@ variable "instances" {
   default = ["frontend" , "backend" , "mysql"]
 }
 
- output "instances" {
-   count = length(var.instances)
-   value = var.instances[count.index]
- }
+resource "null_resource" "sample" {
+  count = length(var.instances)
+}
