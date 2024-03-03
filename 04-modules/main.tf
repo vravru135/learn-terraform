@@ -1,4 +1,5 @@
 module "test" {
+  for_each = ar.instances
   source = "./test"
 }
 
