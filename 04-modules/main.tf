@@ -1,5 +1,5 @@
 module "test" {
-  for_each = ar.instances
+  for_each = var.instances
   source = "./test"
 }
 
