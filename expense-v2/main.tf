@@ -34,7 +34,7 @@ resource "aws_route53_record" "backend" {
 
 resource "aws_instance" "mysql" {
    ami = var.ami
-   instance_type = var.instance_type"
+   instance_type = var.instance_type
    vpc_security_group_ids = var.sg_id
    tags = {
      Name = "mysql"
