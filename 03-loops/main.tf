@@ -24,7 +24,7 @@ variable "instances1" {
        instance_type = "t3.micro"
     }
      mysql = {
-       name = "frontend"
+       name = "mtsql"
        instance_type = "t3.micro"
     }
   }
