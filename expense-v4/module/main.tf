@@ -15,11 +15,6 @@ resource "aws_route53_record" "frontend" {
   records = [aws_instance.instances.private_ip]
 }
 
-variable "ami" {}
-variable "instance_type" {}
-variable "sg_id" {}
-variable "name" {}
-variable "env" {}
-variable "zone_id" {}
+
 
 
