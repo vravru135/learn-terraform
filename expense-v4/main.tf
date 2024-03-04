@@ -4,7 +4,7 @@ module "expense" {
 
 ami           = var.ami
 env           = var.env
-instance-type = each.value["instance_type"]
+instance_type = each.value["instance_type"]
 name          = each.value["name"]
 sg_id         = var.sg_id
 zone_id       = var.zone_id
