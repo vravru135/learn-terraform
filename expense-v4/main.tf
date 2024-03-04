@@ -1,7 +1,6 @@
 module "expense" {
   for_each = var.components
   source = "./module"
-}
 
 ami           = var.ami
 env           = var.env
