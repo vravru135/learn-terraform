@@ -9,10 +9,10 @@ resource "aws_instance" "instance" {
 
 resource "aws_route53_record" "frontend" {
   zone_id = var.zone_id
-  name    = "${var_name}-${var.env}"
+  name    = "${var.name}-${var.env}"
   type    = "A"
   ttl     = 30
-  records = [aws_instance.instances.private_ip]
+  records = [aws_instance.instance.private_ip]
 }
 
 
