@@ -14,5 +14,5 @@ data "aws_instance" "instance" {
  }
 
  output "instance" {
-   value = "Instance ID - ${data.aws_instance.instance.id} | Public IP - ${data.aws_instance.public_ip}"
+   value = "Instance ID - ${data.aws_instance.instance.id} | Public IP - ${data.aws_instance.instance.public_ip}"
  }
